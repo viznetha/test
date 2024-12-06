@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>MY RESUME</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0059fb928e.js" crossorigin="anonymous"></script>
+    </head>  
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="" class="logo">
+                    <ul id="sidemenu">
+                        <!-- <li><a href="#">Home</a></li> -->
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#projects">Projects</a></li> -->
+                        <li><a href="#services">Certificates</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>welcome</p>
+                    <h1>I am <span>VIZNETHA RANI</span><br> CHEVVAKULA </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------- about ---------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">ABOUT ME</h1>
+                        <p>
+                            I am a recent graduate in Computer Science with a 
+                            strong foundation in programming languages like JavaScript, 
+                            Python, and Java.During my academic career, I developed a 
+                            passion for software development and worked on several 
+                            projects, including a web application using React and Node.js.
+                            I am skilled in problem-solving and am constantly learning new 
+                            technologies to stay up to date with i ndustry trends.
+                            I'm excited to start my career as a software developer 
+                            and contribute to building innovative solutions while 
+                            further honing my technical skills.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick=" opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick=" opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <h2>Technical Skills</h2><br>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>node.js</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <h2>Internship</h2><br>
+                                    <li>Web Developer</li>
+                                    <li>APPIT Software </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>B.Tech</span><br>Computer science and Engineering (74%)<br>malla reddy College of Engineering and Technology</li>
+                                <li><span>Intermediate</span><br>MPC(73%)<br>Sri Chaitanya Junior Kalasala</li>
+                                <li><span>SSC</span><br>Indira convent High School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------serices------------------- -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Certificates</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-sharp-duotone fa-solid fa-graduation-cap"></i>
+                        <!-- <i class="fa-solid fa-code"></i> -->
+                        <h1>Internship</h1>
+                        <h3>Web Developer</h3>
+                        <p>
+                            Worked as a web developer at APPIT software .
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-medal"></i>
+                        <!-- <i class="fa-solid fa-crop-simple"></i> -->
+                        <h1>Mepro Certificate</h1>
+                        <h3>English profession</h3>
+                        <p>
+                            Person MePro 10th level Certificate on 
+                            english profession .
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-award"></i>
+                        <!-- <i class="fa-brands fa-app-store"></i> -->
+                        <h1>Coursera certificate</h1>
+                        <h3>Python</h3>
+                        <p>
+                            Completed Coursera certificate like AI,Python,ML .
+                        </p>
+                        <!-- <a href="#">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------ PROJECTS ---------------- -->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="https://www.codewithc.com/wp-content/uploads/2014/06/student-report-card-cpp.png" alt="Project 1">
+                        <div class="layer">
+                            <h3>Project 1</h3>
+                            <h4>Student Report Card System</h4>
+                            <a href="#first-project" onclick="toggleInfo('first-project')" >View Project</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*OfoZ60WfklcJji7O.jpg" alt="Project 2" height="270px">
+                        <div class="layer">
+                            <h3>Project 2</h3>
+                            <h4>Virtual Mouse</h4>
+                            <a href="#second-project" onclick="toggleInfo('second-project')">View Project</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="https://www.ai-tech.systems/wp-content/uploads/2020/12/Fetal-health-classification%E2%80%8A%E2%80%94%E2%80%8Aon-cAInvas.png" alt="Project 3">
+                        <div class="layer">
+                            <h3>Project 3</h3>
+                            <h4>Fetal Health Prediction using CTG</h4>
+                            <a href="#third-project" onclick="toggleInfo('third-project')">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="first-project" style="display: none;">
+                    <h3>MY FIRST PROJECT</h3>
+                    <h3>Student Report Card Project Overview</h3>
+                    <strong>Objective:</strong><br>
+                    <p>
+                        The goal of this project is to build a web-based 
+                        student report card system where students can 
+                        view their grades, teachers can input scores,
+                        and administrators can manage student records.
+                    </p><br>
+                    <strong>Key Features:</strong>
+                    <p>
+                        <strong>Login/Authentication:</strong>
+                        Allow users to log in with a username and password.
+                        This could be done for different roles (students,
+                        teachers, administrators).
+                    </p><br>
+                </div>
+                <div id="second-project" style="display: none;">
+                    <h3>My Second Project</h3>
+                    <h4>Virtual Mouse</h4>
+                    <p>
+                        A Virtual Mouse project is an innovative concept 
+                        that aims to simulate and control mouse functionality 
+                        without the need for a physical mouse device.
+                        It is especially useful in scenarios where a traditional mouse 
+                        is unavailable, inaccessible, or not suitable for the task at hand.
+                        The virtual mouse can be controlled via various input methods such as touchpads,
+                        touchscreens, hand gestures, or even webcam-based gesture recognition.
+                    </p><br>
+                </div>
+                <div id="third-project" style="display: none;">
+                    <h3>My Third Project</h3><br>
+                    <h4>Fetal Health Prediction using CTG</h4>
+                    <p>
+                        Fetal health prediction using CTG (Cardiotocography) 
+                        is a critical area in obstetrics for monitoring the 
+                        well-being of the fetus during pregnancy, particularly 
+                        in high-risk pregnancies.
+                        CTG is a medical test that records the fetal heart 
+                        rate (FHR) and uterine contractions, offering valuable 
+                        insights into the fetus's health status.
+                        The goal of fetal health prediction is to analyze the 
+                        CTG data to detect early signs of distress or abnormal 
+                        conditions that may affect the fetus, and to predict 
+                        potential complications that might require medical 
+                        intervention.
+                    </p>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+
+        <!-- ----------- CONTACT ----------- -->
+
+        <section id="contact" class="section">
+            <div class="container1">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>viznetharani@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>Phone NO:9234567890</p>
+
+                    <!-- FOR ADDING AN SOCIAL MEDIA ICONS  -->
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download  CV</a>
+                </div>
+                <div class="contact-right">
+                    <p>
+                        If you'd like to get in touch, feel free 
+                        to reach out via the form below.
+                    </p><br>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="full name">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right= "0";
+            }
+            function closemenu(){
+                sidemenu.style.right= "-200px";
+            }
+        </script>
+
+        <script>
+            function toggleInfo(projectId) {
+                var infoDiv = document.getElementById(projectId);
+                // Check the current display style of the infoDiv
+                if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                    infoDiv.style.display = 'block';  // Show the project info
+                } 
+                else {
+                    infoDiv.style.display = 'none';   // Hide the project info
+                }
+            }
+        </script>
+        <div class="copyright">
+            <p>Copyright @ viznetharani <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </body>
+</html>
