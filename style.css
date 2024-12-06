@@ -53,6 +53,13 @@ nav ul li a:after{
 nav ul li a:hover::after{
     width: 100%;
 }
+#sidemenu{
+    padding: 0px 400px;
+    top: 0px;
+    position: fixed;
+    background-color:black;
+    z-index:1000;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
