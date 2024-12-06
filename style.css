@@ -55,6 +55,7 @@ nav ul li a:hover::after{
 }
 #sidemenu{
     padding: 0px 400px;
+    /* left: 0px; */
     top: 0px;
     position: fixed;
     background-color:black;
